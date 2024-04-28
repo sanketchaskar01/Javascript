@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Dom</title>
+</head>
+<body id="b">
+    <script>
+        var arr = ['red','yellow','black','blue','orange']
+        var i=0
+
+        function UserInput(){
+            
+         var b = document.getElementById('b')
+         b.style.backgroundColor =  arr[i]
+         i++
+
+         if (arr.length<=i){
+            i=0
+         }
+        }
+    </script>
+    <button onclick="UserInput()">Click Here</button>
+    <a href=""><button>Refresh</button></a>
+</body>
+</html>
